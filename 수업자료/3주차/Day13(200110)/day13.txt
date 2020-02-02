@@ -1,0 +1,15 @@
+20 01 10 Day13
+
+printf("%s\n","Happy Birthday");  ▶ "~~" 는 주소값
+
+"Happy Birthay" + 1 = a가 있는 주소값(H가 주소 그 자체)
+
+
+size = sizeof(str)/sizeof(str[0]);
+
+
+char ttr[];
+    ttr = "Happy Birthday";   ▶ xx -배열의 이름은 상수이다. 
+
+
+char str[] = "Happy Birthday"; //이거는 주소값! ~ printf("Before : %s\n",str); ▶ 배열을 for 안돌고 한번에 출력할 수 있다.
