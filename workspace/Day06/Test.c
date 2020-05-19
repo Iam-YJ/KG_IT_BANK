@@ -110,7 +110,7 @@ int main() {
 	scanf("%s", &(p->p->name));
 	printf("점수를 입력하세요 : ");
 	//scanf()를 이용해 score에 점수를 입력 받으세요.
-	scanf("%d", &(p->p->score));
+	scanf("%d", (p->p->score));
 	//입력받은 값을 출력하세요.
 	printf("이름은 %s", p->p->name);
 	printf("점수는 %d", p->p->score);

@@ -1,0 +1,6 @@
+﻿  Test.c
+F:\1월_자료구조_박유진\workspace\Day09\Test.c(55,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'node *'입니다.
+F:\1월_자료구조_박유진\workspace\Day09\Test.c(56,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'node *'입니다.
+F:\1월_자료구조_박유진\workspace\Day09\Test.c(56,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'node *'입니다.
+F:\1월_자료구조_박유진\workspace\Day09\Test.c(56,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'node *'입니다.
+  Day09.vcxproj -> F:\1월_자료구조_박유진\workspace\Day09\Debug\Day09.exe
