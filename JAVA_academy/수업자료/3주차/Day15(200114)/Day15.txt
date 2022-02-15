@@ -1,0 +1,19 @@
+Day 5
+20 01 14
+
+printStackTrace(); - 스택 안에 있는 정보를 출력
+getMessage(); 인스턴스 안에 있는 정보를 출력
+
+
+List - 순서가 있는 데이터 집합 / 중복 허용 > ArrayList - (interface 클래스이다.. 그래서 확장할 수도 있다.)
+Set - 순서가 없는 데이터 집합 / 중복 x
+Map - 키와 값으로 이루어진 데이터 집합
+
+interface 는 다중상속을 하기 위해서.
+
+class는 extends 
+interface는 implements
+
+제네릭스 <>
+예시)
+ArrayList<Integer> list1 = new ArrayList<Integer>(10);

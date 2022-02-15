@@ -1,0 +1,13 @@
+20 01 10 Day 13
+
+super - 부모의 주소
+THIS - 인스턴스에 대한 주소 찾아..
+
+worker(){
+ super("ㅇㅇㅇ",33);  > 출력결과 잘 나옴 > 수퍼 부모의 초기화 함+호출 
+}
+
+생성자의 호출은 항상 맨 첫 줄 > super + super.get oo / super.get + super xx
+
+final + class > 상속 x 
+
