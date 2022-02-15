@@ -1,0 +1,4 @@
+﻿  test.c
+F:\1월_자료구조_박유진\workspace\day10\test.c(84,20): warning C4047: '함수': 'Linklist **'의 간접 참조 수준이 'node *'과(와) 다릅니다.
+F:\1월_자료구조_박유진\workspace\day10\test.c(84,20): warning C4024: 'Output': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+  day10.vcxproj -> F:\1월_자료구조_박유진\workspace\day10\Debug\day10.exe

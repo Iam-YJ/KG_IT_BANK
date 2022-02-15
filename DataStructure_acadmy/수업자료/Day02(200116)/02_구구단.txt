@@ -1,0 +1,18 @@
+//입력받은 수의 구구단을 출력하는 함수를 구현하세요.
+
+#include <stdio.h>
+
+void Gugudan ();
+
+int main()
+{
+	int dan;
+	printf("input : ");
+	scanf("%d", &dan);
+	Gugudan(dan);
+}
+
+void Gugudan()
+{
+	//코드 작성
+}

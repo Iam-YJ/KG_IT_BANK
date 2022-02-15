@@ -1,0 +1,75 @@
+int findmax(Tree** root)
+{
+	if ((*root)->Rlink == NULL) {
+		return (*root)->data;
+	}
+	findmax(&(*root)->Rlink);
+}
+
+int findmin(Tree** root)
+{
+	if ((*root)->Llink == NULL) {
+		return (*root)->data;
+	}
+	findmin(&(*root)->Llink);
+}
+
+Tree* findnode(Tree** root, int data)
+{
+	if ((*root)->data == data)
+		return *root;
+	else
+	{
+		if ((*root)->data > data)
+			findnode(&(*root)->Llink, data);
+		else
+			findnode(&(*root)->Rlink, data);
+	} 
+}
+
+void Delete_node2(Tree** root, int data)
+{
+	int max, min;
+	Tree* tmp1, * tmp2, *tmp;
+
+	if ((*root)->data == data) {
+		max = findmax(&(*root)->Llink);
+		min = findmin(&(*root)->Rlink);
+
+		if ((data - max) > (min - data)) {
+			tmp = findnode(&(*root)->Rlink, min);
+			if (tmp->Rlink == NULL) 	//단말노드
+				Delete_leaf(&(*root)->Rlink, min);
+			else
+				Delete_node1(&(*root)->Rlink, min);
+
+			tmp1 = (*root)->Llink;
+			tmp2 = (*root)->Rlink;
+			(*root) = GetNode();
+			(*root)->data = min;
+			(*root)->Llink = tmp1;
+			(*root)->Rlink = tmp2;
+		}
+
+		if ((data - max) < (min - data)) {
+			if (findnode(&(*root)->Llink, max)->Llink == NULL) 	//단말노드
+				Delete_leaf(&(*root)->Llink, max);
+			else
+				Delete_node1(&(*root)->Llink, max);
+
+			tmp1 = (*root)->Llink;
+			tmp2 = (*root)->Rlink;
+			(*root) = GetNode();
+			(*root)->data = max;
+			(*root)->Llink = tmp1;
+			(*root)->Rlink = tmp2;
+		}
+	}
+	else
+	{
+		if ((*root)->data > data)
+			Delete_node2(&(*root)->Llink, data);
+		if ((*root)->data < data)
+			Delete_node2(&(*root)->Rlink, data);
+	}
+}

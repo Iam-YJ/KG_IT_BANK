@@ -1,0 +1,5 @@
+﻿  Test.c
+F:\1월_자료구조_박유진\workspace\Day03\Test.c(80,28): warning C4028: 정식 매개 변수 1이(가) 선언과 다릅니다.
+F:\1월_자료구조_박유진\workspace\Day03\Test.c(80,28): warning C4028: 정식 매개 변수 2이(가) 선언과 다릅니다.
+F:\1월_자료구조_박유진\workspace\Day03\Test.c(87): warning C4716: 'Swap': 값을 반환해야 합니다.
+  Day03.vcxproj -> F:\1월_자료구조_박유진\workspace\Day03\Debug\Day03.exe

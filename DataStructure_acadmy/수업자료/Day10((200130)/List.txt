@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct node
+{
+	int data;
+	struct node * link;
+}Linklist;
+
+Linklist* GetNode()
+{
+	Linklist * tmp;
+	tmp=(Linklist*)malloc(sizeof(Linklist));
+	tmp->link=NULL;
+	return tmp;
+}
+
+void Insert(Linklist **head, int data)
+{
+	if(*head==NULL)
+	{
+		*head=GetNode();
+		(*head)->data=data;
+		return;
+	}
+	Insert(&(*head)->link, data);
+}
+
+int main(void)
+{
+	Linklist * head=NULL;
+
+	Insert(&head,10);
+	Insert(&head,20);
+	Insert(&head,30);
+
+	return 0;
+}
