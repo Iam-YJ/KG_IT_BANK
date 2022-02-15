@@ -1,0 +1,24 @@
+C언어
+
+C언어 난수발생
+srand(time(NULL));
+r = ((rand()%100) + 1) ;
+
+C언어 잔다
+_sleep(100);	
+
+size = sizeof(str)/sizeof(str[0]);
+
+//포인터 
+int *numPtr;      // 포인터 변수 선언
+int num1 = 10;    // int형 변수를 선언하고 10 저장
+numPtr = &num1;   // num1의 메모리 주소를 포인터 변수에 저장
+
+numPtr == &num1; (주소값)
+*numPtr == num1; (숫자)
+
+int *ptr 변수(자료형 *포인터이름)
+&a (주소를 알아옵시당) 
+ *ptr (참조해서 사용해주세요. 간접접근)
+
+*(ptr+1) == ptr[1] == arr[1]  == *(arr+1) 

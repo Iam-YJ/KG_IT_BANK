@@ -1,0 +1,13 @@
+Day 15
+20 01 14
+
+CPU (REGISTER) 
+|
+ROM
+|
+RAM (PROCESS)
+
+HARD DISK (PROGRAM 실행시 RAM으로..)
+
+SRAM
+

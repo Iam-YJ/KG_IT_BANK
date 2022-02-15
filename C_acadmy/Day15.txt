@@ -1,0 +1,101 @@
+#include <stdio.h>
+
+#define PI 3.141592
+#define MAX 255
+#define MULTI(x) x*x
+#define HAP(x,y) x+y
+#define GOP(x,y) x*y
+
+void radian();
+void funcArray();
+void funcMacro();
+
+void main(){
+   //define 예시
+   //radian();
+   //funcArray();
+   //funcMacro();
+
+   funcFile();
+
+}
+
+void funcArray(){
+   int arr[MAX];
+   int i;
+   for(i=0; i<MAX; i++){
+      arr[i] = i+1;
+   }
+
+   for(i=0; i<MAX; i++){
+      printf("arr[%d] = %d \n",i,arr[i]);
+   }
+}
+
+void radian(){
+   int r;
+   printf("반지름 입력 : \n");
+   scanf("%d",&r);
+   printf("원의 넓이는 %.2lf입니다.\n",(r*PI));
+}
+
+void funcMacro(){
+   int num;
+   int num1,result;
+
+   printf("숫자 입력 : ");
+   scanf("%d",&num);
+
+   result = 10*HAP(num,4);
+   printf("%d\n",result);
+
+   result = 10*HAP(num,4);
+   result = GOP(1+2,3+4);
+   printf("%d\n",result);
+
+   printf("%d의 제곱은 %d 입니다\n",num,MULTI(num));
+
+}
+
+int funcFile(){
+   FILE *fp; 
+   char ch;
+   char str[MAX];
+
+   //파일 올리기..
+   fp = fopen("out.txt","w"); // 쓰기로 열었다..
+   if(fp == NULL){
+      printf("파일 생성 실패\n");
+      return 0;
+   }
+//문자 받아오기   
+   //printf("문자 입력 : ");
+   //ch = getchar();
+   //fputc(ch,fp);
+
+//문자열 받아오기
+   //prinf("문자열 입력 : ");
+   //gets(str);
+   //fputs(str, fp);
+   //printf("저장 완료");
+
+//파일 스트림 출력
+   fgets(str,255,fp);
+   printf("%s\n",str);
+
+   fclose(fp);
+
+
+   //파일 가져오기..
+   fp = fopen("out.txt","r"); // 읽기로 열었다..
+   if(fp == NULL){
+      printf("파일 생성 실패\n");
+      return 0;
+   }
+   
+   ch = fgetc(fp);
+   printf("ch=%c\n",ch);
+
+   fclose(fp);
+   EOF
+}
